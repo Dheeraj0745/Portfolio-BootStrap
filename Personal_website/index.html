@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anoAnymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/Personal_website/style.css" />
+    <script src="/Personal_website/dynamic.js"></script>
+  </head>
+  <body class="bg-black">
+    <!-- navbar starts -->
+    <nav
+      class="navbar navbar-expand-md navbar-dark bg-dark position-relative p-4"
+    >
+      <!-- Background Video -->
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="w-100 h-100 position-absolute top-0 start-0"
+        style="object-fit: cover; z-index: 1"
+      >
+        <source src="/Assets/videos/blackhole.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Overlay Content -->
+      <div class="container-fluid position-relative" style="z-index: 2">
+        <a href="#" class="navbar-brand fw-bold theme logo">Portfolio</a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#dhiru"
+          aria-controls="dhiru"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Toggling list -->
+        <div class="collapse navbar-collapse" id="dhiru">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#about" class="nav-link active">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#skill" class="nav-link">Skills</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                href="#project"
+                class="nav-link dropdown-toggle"
+                id="projectsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#hiresense">Hiresense</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#weatherly">Weatherly-js</a>
+                </li>
+                <li><a class="dropdown-item" href="#github">Portfolio</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- About section starts -->
+    <div class="container section-container bg-black" id="about">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card bg-black text-white mt-5">
+            <h1 class="text-center">Hey, I’m Dheeraj 👋</h1>
+            <div class="card-body">
+              <p>
+                Full stack developer with skills in Java, HTML, CSS, JavaScript,
+                and databases. I like building web applications that are simple
+                use on the front end and reliable on the back end. I use Git and
+                GitHub to manage my projects and enjoy learning new tools and
+                ideas that help me improve as a developer
+              </p>
+            </div>
+            <div class="pb-3 d-flex justify-content-center align-items-center">
+              <a
+                href="/Assets/resumes/resume_dheeraj (11).pdf"
+                download="Dheeraj_Resume.pdf"
+              >
+                <button class="btn btn-outline-light">
+                  <i class="bx bx-send"></i> Resume
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+          <video
+            class="w-100 rounded"
+            autoplay
+            muted
+            loop
+            style="max-height: 400px; object-fit: cover"
+          >
+            <source src="/Assets/videos/hero-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- About section ends -->
+
+    <!-- Skills section starts -->
+    <div class="container section-container mt-5 bg-black" id="skill">
+      <h1 class="text-center fw-bold text-white mb-5">My Skills 💪</h1>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-6 d-flex align-items-stretch">
+          <div class="card skill-card text-white text-center">
+            <img
+              class="img-fluid mx-auto skill-img"
+              src="/Assets/images/grid1.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h2>Frontend Development</h2>
+              <p>
+                Skilled in <b>HTML, CSS, Bootstrap, JavaScript,</b>, and modern
+                UI frameworks. I create responsive, user-friendly interfaces
+                that look great on all devices.
+              </p>
+            </div>
+
+            <div class="pb-3">
+              <button class="btn btn-outline-light">
+                <i class="bx bx-send"></i> Contact Me
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-6 d-flex align-items-stretch">
+          <div class="card skill-card text-white text-center">
+            <img
+              class="img-fluid mx-auto skill-img"
+              src="/Assets/images/grid2.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h2>Backend Development</h2>
+              <p>
+                Experienced with <b>JEE,SpringBoot</b> and Oracle. I build
+                scalable and secure backends that make apps run smoothly.
+                Currently learning Spring and Spring Boot
+              </p>
+            </div>
+            <div class="pb-3">
+              <button class="btn btn-outline-light">
+                <i class="bx bx-send"></i> Contact Me
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-6 d-flex align-items-stretch mt-5">
+          <div class="card skill-card text-white text-center">
+            <img
+              class="img-fluid mx-auto skill-img"
+              src="/Assets/images/grid4.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h2>Codeability and Programming skills</h2>
+              <p>8K plus lines of code and known languages are C/C++ ,java.</p>
+            </div>
+            <div class="pb-3">
+              <button class="btn btn-outline-light">
+                <i class="bx bx-send"></i> Contact Me
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-6 d-flex align-items-stretch mt-5">
+          <div class="card skill-card text-white text-center">
+            <img
+              class="img-fluid mx-auto skill-img"
+              src="/Assets/images/digital brain (2).png"
+              alt=""
+            />
+            <div class="card-body">
+              <h2>Problem Solving</h2>
+              <p>
+                Solved 150+ problem on leetcode / 100+ on geekforGeeks Data
+                Structurs and algorithms - basic to intermediate
+              </p>
+            </div>
+            <div class="pb-3">
+              <button class="btn btn-outline-light">
+                <i class="bx bx-send"></i> Contact Me
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills section ended -->
+
+    <!-- Project Section starts -->
+    <div class="container my-5" id="project">
+      <!-- card 1 -->
+      <div class="row align-items-center shadow-lg p-4 rounded bg-dark">
+        <!-- Project Image -->
+        <div class="col-md-6">
+          <img
+            src="/Assets/images/Screenshot 2025-08-26 101815.png"
+            alt="HireSense AI Project"
+            class="img-fluid rounded"
+          />
+        </div>
+
+        <!-- Project Details -->
+        <div class="col-md-6 text-white" id="hiresense">
+          <h2 class="fw-bold mb-3 text-center">HireSense AI</h2>
+          <p>
+            Full stack Java Based WebApplication With AI integreation,
+            AI-powered resume analysis and job matching platform that extracts
+            insights from resumes and matches them with the right opportunities.
+          </p>
+          <ul>
+            <li>🤖 AI-powered resume analysis</li>
+            <li>📊 Extracts skills, experience, summary</li>
+            <li>⚡ Smart job matching system</li>
+            <li class="text-danger">Currently under final stage..</li>
+          </ul>
+          <div class="mt-3">
+            <a
+              href="https://your-hiresense-live-link.com"
+              target="_blank"
+              class="btn btn-primary me-2"
+            >
+              🔗 Live Demo
+            </a>
+            <a
+              href="https://github.com/your-hiresense-repo"
+              target="_blank"
+              class="btn btn-outline-light"
+            >
+              💻 Code Review
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div
+        class="row align-items-center shadow-lg p-4 rounded bg-dark mb-4"
+        id="weatherly"
+      >
+        <!-- Project Image -->
+        <div class="col-md-6">
+          <img
+            src="/Assets/images/Screenshot 2025-08-26 101854.png"
+            alt="Weatherly-JS Project"
+            class="img-fluid rounded"
+          />
+        </div>
+
+        <!-- Project Details -->
+        <div class="col-md-6 text-white">
+          <h2 class="fw-bold mb-3 text-center">Weatherly-JS</h2>
+          <p>
+            A weather forecasting web app that provides real-time temperature,
+            humidity, and wind data for any city. Built with
+            <b>JavaScript, Bootstrap, and OpenWeather API</b>.
+          </p>
+          <ul>
+            <li>🌍 Search weather by city name</li>
+            <li>📊 Displays temperature, humidity, wind</li>
+            <li>⚡ Responsive UI with Bootstrap 5</li>
+          </ul>
+          <div class="mt-3">
+            <a
+              href="https://dheeraj0745.github.io/Weatherly-JS/"
+              target="_blank"
+              class="btn btn-primary me-2"
+            >
+              🔗 Live Demo
+            </a>
+            <a
+              href="https://github.com/Dheeraj0745/Weatherly-JS"
+              target="_blank"
+              class="btn btn-outline-light"
+            >
+              💻 Code Review
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div
+        class="row align-items-center shadow-lg p-4 rounded bg-dark mb-4"
+        id="github"
+      >
+        <!-- Project Image -->
+        <div class="col-md-6">
+          <img
+            src="/Assets/images/Screenshot 2025-08-26 102659.png"
+            alt="Github User Details Fetcher"
+            class="img-fluid rounded"
+          />
+        </div>
+
+        <!-- Project Details -->
+        <div class="col-md-6 text-white">
+          <h2 class="fw-bold mb-3 text-center">Github User Details Fetcher</h2>
+          <p>
+            A web app to fetch and display Github user profile information using
+            <b>GitHub API, JavaScript, and Bootstrap</b>.
+          </p>
+          <ul>
+            <li>🔍 Search by GitHub username</li>
+            <li>👤 Displays name, company, and website</li>
+            <li>⚡ Simple and responsive design</li>
+          </ul>
+          <div class="mt-3">
+            <a
+              href="https://your-github-fetcher-live-link.com"
+              target="_blank"
+              class="btn btn-primary me-2"
+            >
+              🔗 Live Demo
+            </a>
+            <a
+              href="https://github.com/your-github-fetcher-repo"
+              target="_blank"
+              class="btn btn-outline-light"
+            >
+              💻 Code Review
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Section ends -->
+
+    <!-- Contact me page -->
+
+    <!-- Contact Section starts -->
+    <div class="container-fluid mt-5 mb-5" id="contact">
+      <h1 class="text-center fw-bold text-white mb-4">Get in Touch 🧑‍💻</h1>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card contact-card text-white p-4 rounded-4">
+            <form novalidate>
+              <div class="row g-4">
+                <!-- Name -->
+                <div class="col-md-6 form-floating p-1">
+                  <input
+                    type="text"
+                    class="form-control contact-input text-center"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                  <label for="name" class="text-white text-center"
+                    >Your Name</label
+                  >
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6 form-floating p-1">
+                  <input
+                    type="email"
+                    class="form-control contact-input"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                  <label for="email " class="text-white text-center"
+                    >Your Email</label
+                  >
+                </div>
+
+                <!-- Subject -->
+                <div class="col-12 form-floating p-1">
+                  <input
+                    type="text"
+                    class="form-control contact-input"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                  <label for="subject" class="text-center text-white"
+                    >Subject</label
+                  >
+                </div>
+
+                <!-- Message -->
+                <div class="col-12 form-floating p-1">
+                  <textarea
+                    class="form-control contact-input"
+                    id="message"
+                    placeholder="Write your message..."
+                    style="height: 150px"
+                    required
+                  ></textarea>
+                  <label for="message" class="text-center text-white"
+                    >Message</label
+                  >
+                </div>
+
+                <!-- Submit -->
+                <div class="col-12 text-center mt-4">
+                  <button class="btn btn-outline-light">
+                    <i class="bx bx-send"></i> Send-Message.
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Section ends -->
+
+    <!-- Extra Styling -->
+
+    <!-- Contact me page -->
+
+    <!-- Footer section -->
+    <!-- Footer section -->
+    <footer class="text-white position-relative py-3" style="overflow: hidden">
+      <!-- Background Video -->
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="w-100 h-100 position-absolute top-0 start-0"
+        style="object-fit: cover; z-index: 1"
+      >
+        <source src="/Assets/videos/galaxy.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Dark Overlay -->
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100"
+        style="background: rgba(0, 0, 0, 0.6); z-index: 2"
+      ></div>
+
+      <!-- Overlay Content -->
+      <div
+        class="container position-relative d-flex flex-column justify-content-center align-items-center text-center"
+        style="z-index: 3"
+      >
+        <!-- Social Links -->
+        <div class="mb-2 d-flex justify-content-center gap-3">
+          <a
+            href="https://www.linkedin.com/in/dheeraj-mishra-575ab9291/"
+            target="_blank"
+            class="text-white"
+          >
+            <i class="fab fa-linkedin fa-xl"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/i_m_dhiru45/"
+            target="_blank"
+            class="text-white"
+          >
+            <i class="fab fa-instagram fa-xl"></i>
+          </a>
+          <a
+            href="https://github.com/Dheeraj0745"
+            target="_blank"
+            class="text-white"
+          >
+            <i class="fab fa-github fa-xl"></i>
+          </a>
+        </div>
+
+        <!-- Footer Text -->
+        <p class="mb-0 small">
+          &copy; Developed with❤️ by <b>Dheeraj Mishra</b> in 2025.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Footer section ended -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
