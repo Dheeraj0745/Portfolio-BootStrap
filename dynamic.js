@@ -7,6 +7,7 @@ document.querySelectorAll('.HireSenseDemo').forEach(el => {
 document.querySelectorAll('.HireSenseReview').forEach(el => {
   el.addEventListener('click', (e) => {
     e.preventDefault();
-    alert("Source Code is not available Yet");
+    alert("Source Code is not available!");
   });
 });
+
