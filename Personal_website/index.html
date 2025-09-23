@@ -21,7 +21,7 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/Personal_website/style.css" />
-    <script src="/Personal_website/dynamic.js"></script>
+    <script src="/Personal_website/dynamic.js" defer></script>
   </head>
   <body class="bg-black">
     <!-- navbar starts -->
@@ -37,7 +37,7 @@
         class="w-100 h-100 position-absolute top-0 start-0"
         style="object-fit: cover; z-index: 1"
       >
-        <source src="/Assets/videos/blackhole.mp4" type="video/mp4" />
+        <source src="/Personal_website/Assets/videos/blackhole.mp4" type="video/mp4" />
       </video>
 
       <!-- Overlay Content -->
@@ -115,7 +115,7 @@
             </div>
             <div class="pb-3 d-flex justify-content-center align-items-center">
               <a
-                href="/Assets/resumes/resume_dheeraj (11).pdf"
+                href="/Personal_website/Assets/resumes/resume_dheeraj (12).pdf"
                 download="Dheeraj_Resume.pdf"
               >
                 <button class="btn btn-outline-light">
@@ -134,7 +134,7 @@
             loop
             style="max-height: 400px; object-fit: cover"
           >
-            <source src="/Assets/videos/hero-video.mp4" type="video/mp4" />
+            <source src="/Personal_website/Assets/videos/hero-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -144,7 +144,7 @@
 
     <!-- Skills section starts -->
     <div class="container section-container mt-5 bg-black" id="skill">
-      <h1 class="text-center fw-bold text-white mb-5">My Skills 💪</h1>
+      <h1 class="text-center fw-bold text-white mb-5">My Skills</h1>
 
       <div class="row g-4">
         <!-- Card 1 -->
@@ -152,7 +152,7 @@
           <div class="card skill-card text-white text-center">
             <img
               class="img-fluid mx-auto skill-img"
-              src="/Assets/images/grid1.png"
+              src="/Personal_website/Assets/images/grid1.png"
               alt=""
             />
             <div class="card-body">
@@ -164,10 +164,14 @@
               </p>
             </div>
 
-            <div class="pb-3">
-              <button class="btn btn-outline-light">
-                <i class="bx bx-send"></i> Contact Me
-              </button>
+            <div class="pb-3 d-flex justify-content-center align-items-center">
+              <a
+                href="#contact"
+              >
+                <button class="btn btn-outline-light">
+                  <i class="bx bx-send"></i>Contact
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -177,7 +181,7 @@
           <div class="card skill-card text-white text-center">
             <img
               class="img-fluid mx-auto skill-img"
-              src="/Assets/images/grid2.png"
+              src="/Personal_website/Assets/images/grid2.png"
               alt=""
             />
             <div class="card-body">
@@ -188,10 +192,14 @@
                 Currently learning Spring and Spring Boot
               </p>
             </div>
-            <div class="pb-3">
-              <button class="btn btn-outline-light">
-                <i class="bx bx-send"></i> Contact Me
-              </button>
+             <div class="pb-3 d-flex justify-content-center align-items-center">
+              <a
+                href="#contact"
+              >
+                <button class="btn btn-outline-light">
+                  <i class="bx bx-send"></i>Contact
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -201,17 +209,21 @@
           <div class="card skill-card text-white text-center">
             <img
               class="img-fluid mx-auto skill-img"
-              src="/Assets/images/grid4.png"
+              src="/Personal_website/Assets/images/grid4.png"
               alt=""
             />
             <div class="card-body">
               <h2>Codeability and Programming skills</h2>
               <p>8K plus lines of code and known languages are C/C++ ,java.</p>
             </div>
-            <div class="pb-3">
-              <button class="btn btn-outline-light">
-                <i class="bx bx-send"></i> Contact Me
-              </button>
+           <div class="pb-3 d-flex justify-content-center align-items-center">
+              <a
+                href="#contact"
+              >
+                <button class="btn btn-outline-light">
+                  <i class="bx bx-send"></i>Contact
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -221,7 +233,7 @@
           <div class="card skill-card text-white text-center">
             <img
               class="img-fluid mx-auto skill-img"
-              src="/Assets/images/digital brain (2).png"
+              src="/Personal_website/Assets/images/digital brain (2).png"
               alt=""
             />
             <div class="card-body">
@@ -231,10 +243,14 @@
                 Structurs and algorithms - basic to intermediate
               </p>
             </div>
-            <div class="pb-3">
-              <button class="btn btn-outline-light">
-                <i class="bx bx-send"></i> Contact Me
-              </button>
+           <div class="pb-3 d-flex justify-content-center align-items-center">
+              <a
+                href="https://leetcode.com/u/Dheeraj_mishra45/"
+              >
+                <button class="btn btn-outline-light">
+                  <i class="bx bx-send"></i>View
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -242,15 +258,18 @@
     </div>
 
     <!-- Skills section ended -->
+      <div class="row g-4">
 
     <!-- Project Section starts -->
     <div class="container my-5" id="project">
+            <h1 class="text-center fw-bold text-white mb-5">My Projects🧑‍💻</h1>
+
       <!-- card 1 -->
       <div class="row align-items-center shadow-lg p-4 rounded bg-dark">
         <!-- Project Image -->
         <div class="col-md-6">
           <img
-            src="/Assets/images/Screenshot 2025-08-26 101815.png"
+            src="/Personal_website/Assets/images/Screenshot 2025-08-26 101815.png"
             alt="HireSense AI Project"
             class="img-fluid rounded"
           />
@@ -270,18 +289,18 @@
             <li>⚡ Smart job matching system</li>
             <li class="text-danger">Currently under final stage..</li>
           </ul>
-          <div class="mt-3">
+           <div class="mt-3">
             <a
-              href="https://your-hiresense-live-link.com"
+              href="https://dheeraj0745.github.io/Weatherly-JS/"
               target="_blank"
-              class="btn btn-primary me-2"
+              class="btn btn-primary me-2 HireSenseDemo"
             >
               🔗 Live Demo
             </a>
-            <a
-              href="https://github.com/your-hiresense-repo"
+            <a 
+              href="https://github.com/Dheeraj0745/Weatherly-JS"
               target="_blank"
-              class="btn btn-outline-light"
+              class="btn btn-outline-light HireSenseReview"
             >
               💻 Code Review
             </a>
@@ -296,7 +315,7 @@
         <!-- Project Image -->
         <div class="col-md-6">
           <img
-            src="/Assets/images/Screenshot 2025-08-26 101854.png"
+            src="/Personal_website/Assets/images/Screenshot 2025-08-26 101854.png"
             alt="Weatherly-JS Project"
             class="img-fluid rounded"
           />
@@ -342,7 +361,7 @@
         <!-- Project Image -->
         <div class="col-md-6">
           <img
-            src="/Assets/images/Screenshot 2025-08-26 102659.png"
+            src="/Personal_website/Assets/images/Screenshot 2025-08-26 102659.png"
             alt="Github User Details Fetcher"
             class="img-fluid rounded"
           />
@@ -362,14 +381,14 @@
           </ul>
           <div class="mt-3">
             <a
-              href="https://your-github-fetcher-live-link.com"
+              href="https://dheeraj0745.github.io/Fetch_API/"
               target="_blank"
               class="btn btn-primary me-2"
             >
               🔗 Live Demo
             </a>
             <a
-              href="https://github.com/your-github-fetcher-repo"
+              href="https://github.com/Dheeraj0745/Fetch_API"
               target="_blank"
               class="btn btn-outline-light"
             >
@@ -394,7 +413,7 @@
             <form novalidate>
               <div class="row g-4">
                 <!-- Name -->
-                <div class="col-md-6 form-floating p-1">
+                <div class="col-md-6 form-floating p-1" id="form_detail">
                   <input
                     type="text"
                     class="form-control contact-input text-center"
